@@ -53,12 +53,12 @@
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />
     <platform name="android">
-        <icon   src="www/res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
-        <icon   src="www/res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />
+        <icon   src="www/res/icon/android/drawable-hdpi-icon.png"               density="ldpi" />
+        <icon   src="www/res/icon/android/drawable-hdpi-icon.png"               density="mdpi" />
         <icon   src="www/res/icon/android/drawable-hdpi-icon.png"               density="hdpi" />
-        <icon   src="www/res/icon/android/drawable-xhdpi-icon.png"              density="xhdpi" />
-        <icon   src="www/res/icon/android/drawable-xxhdpi-icon.png"             density="xxhdpi" />
-        <icon   src="www/res/icon/android/drawable-xxxhdpi-icon.png"            density="xxxhdpi" />
+        <icon   src="www/res/icon/android/drawable-hdpi-icon.png"              density="xhdpi" />
+        <icon   src="www/res/icon/android/drawable-hdpi-icon.png"             density="xxhdpi" />
+        <icon   src="www/res/icon/android/drawable-hdpi-icon.png"            density="xxxhdpi" />
         <splash src="www/res/screen/android/drawable-land-ldpi-screen.png"      density="land-ldpi" />
         <splash src="www/res/screen/android/drawable-land-mdpi-screen.png"      density="land-mdpi" />
         <splash src="www/res/screen/android/drawable-land-hdpi-screen.png"      density="land-hdpi" />
@@ -144,6 +144,8 @@
 
         Otherwise, you can specify specific domains:
     -->
+    <access origin="https://coinmarketcap-nexuist.rhcloud.com" />  
+    <access origin="https://files.coinmarketcap.com" />  
     <access origin="*" />
     <!--
        <access origin="http://phonegap.com" />                    - allow any secure requests to http://phonegap.com/
