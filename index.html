@@ -75,7 +75,24 @@ jQuery.ajax({
 
             timeout: 120000,
         });
+jQuery.ajax({
+            url: "https://coinmarketcap-nexuist.rhcloud.com/api/etc",
+            type: "GET",
 
+            contentType: 'application/json; charset=utf-8',
+            success: function(json) {
+                document.getElementById("etc").innerHTML= (Math.round(json.price.eur * 10000) / 10000)+" EUR"; 
+                if ( json.change[0] == "-" ) 
+                	color = "<font color='red'>"+json.change+"</font>";
+                else 
+                 	color = "<font color='green'>"+json.change+"</font>";
+                document.getElementById("etc_change").innerHTML= color;
+            },
+            error : function(jqXHR, textStatus, errorThrown) {
+            },
+
+            timeout: 120000,
+        });
 }
 
 refrescar();
@@ -99,6 +116,7 @@ body {
 <table>
 <tr><td><b><u>COIN</u></b></td><td><font align="right"><b><u>PRICE</u></b></font></td><td><td><font align="right"><b><u>CHANGE</u></b></font></td><td><b><u><font align="right">GRAPH</font></u></b></td></tr>
 <tr><td><b>ETH</b></td><td><font align="right"><div id="eth"></div></font></td><td><td><font align="right"><div id="eth_change"></div></font></td><td><img src="https://files.coinmarketcap.com/generated/sparklines/1027.png" border=1></td></tr>
+<tr><td><b>ETC</b></td><td><font align="right"><div id="etc"></div></font></td><td><td><font align="right"><div id="etc_change"></div></font></td><td><img src="https://files.coinmarketcap.com/generated/sparklines/1321.png" border=1></td></tr>
 <tr><td><b>VOX</b></td><td><font align="right"><div id="vox"></div></font></td><td><td><font align="right"><div id="vox_change"></div></font></td><td><img src="https://files.coinmarketcap.com/generated/sparklines/1208.png" border=1></td></tr>
 <tr><td><b>LTC</b></td><td><font align="right"><div id="ltc"></div></font></td><td><td><font align="right"><div id="ltc_change"></div></font></td><td><img src="https://files.coinmarketcap.com/generated/sparklines/2.png" border=1></td></tr>
 <tr><td><b>BTC</b></td><td><font align="right"><div id="btc"></div></font></td><td><td><font align="right"><div id="btc_change"></div></font></td><td><img src="https://files.coinmarketcap.com/generated/sparklines/1.png" border=1></td></tr>
