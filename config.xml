@@ -4,12 +4,12 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.rauliki.blockchainviewer"
-        version   = "1.0.3">
+        version   = "1.0.4">
 
-    <name>BlockChainViewer</name>
+    <name>BlockChain Viewer in Euros</name>
 
     <description>
-        A simple viewer of the cotisation of the main virtual currencies
+        A simple viewer of the cotisation of the main virtual currencies: Ethereum, Bitcoin, Litecoin and Voxels
     </description>
 
     <author href="https://jirasupport.wordpress.com" email="raulpelaez@gmail.com">
@@ -53,24 +53,24 @@
     <!-- Define app icon and splashscreen for each platform. -->
     <icon src="icon.png" />
     <platform name="android">
-        <icon   src="res/icon/android/drawable-hdpi-icon.png"               density="ldpi" />
-        <icon   src="res/icon/android/drawable-hdpi-icon.png"               density="mdpi" />
+        <icon   src="res/icon/android/drawable-ldpi-icon.png"               density="ldpi" />
+        <icon   src="res/icon/android/drawable-mdpi-icon.png"               density="mdpi" />
         <icon   src="res/icon/android/drawable-hdpi-icon.png"               density="hdpi" />
-        <icon   src="res/icon/android/drawable-hdpi-icon.png"              density="xhdpi" />
-        <icon   src="res/icon/android/drawable-hdpi-icon.png"             density="xxhdpi" />
-        <icon   src="res/icon/android/drawable-hdpi-icon.png"            density="xxxhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"      density="land-ldpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"      density="land-mdpi" />
+        <icon   src="res/icon/android/drawable-xhdpi-icon.png"              density="xhdpi" />
+        <icon   src="res/icon/android/drawable-xhdpi-icon.png"             density="xxhdpi" />
+        <icon   src="res/icon/android/drawable-xhdpi-icon.png"            density="xxxhdpi" />
+        <splash src="res/icon/android/drawable-ldpi-icon.png"      density="land-ldpi" />
+        <splash src="res/icon/android/drawable-mdpi-icon.png"      density="land-mdpi" />
         <splash src="res/icon/android/drawable-hdpi-icon.png"      density="land-hdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"     density="land-xhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"    density="land-xxhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"   density="land-xxxhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"      density="port-ldpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"      density="port-mdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"     density="land-xhdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"    density="land-xxhdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"   density="land-xxxhdpi" />
+        <splash src="res/icon/android/drawable-ldpi-icon.png"      density="port-ldpi" />
+        <splash src="res/icon/android/drawable-mdpi-icon.png"      density="port-mdpi" />
         <splash src="res/icon/android/drawable-hdpi-icon.png"      density="port-hdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"     density="port-xhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"    density="port-xxhdpi" />
-        <splash src="res/icon/android/drawable-hdpi-icon.png"   density="port-xxxhdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"     density="port-xhdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"    density="port-xxhdpi" />
+        <splash src="res/icon/android/drawable-xhdpi-icon.png"   density="port-xxxhdpi" />
     </platform>
 
     <platform name="ios">
